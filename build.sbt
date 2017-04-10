@@ -5,14 +5,19 @@ version := "1.0"
 scalaVersion := "2.11.8"
 
 libraryDependencies ++= Seq(
-    "org.apache.spark" % "spark-core_2.11" % "1.6.0" exclude ("org.apache.hadoop","hadoop-yarn-server-web-proxy"),
-    "org.apache.spark" % "spark-sql_2.11" % "1.6.0" exclude ("org.apache.hadoop","hadoop-yarn-server-web-proxy"),
-    "org.apache.hadoop" % "hadoop-common" % "2.7.0" exclude ("org.apache.hadoop","hadoop-yarn-server-web-proxy"),
+    "org.apache.spark" % "spark-core_2.11" % "2.0.0",
+    "org.apache.spark" % "spark-sql_2.11" % "2.0.0",
+    "org.scala-lang" % "scala-compiler" %  "2.11.8",
+    "org.scala-lang.modules" % "scala-xml_2.11" % "1.0.4"
+)
+
+/*
+"org.apache.hadoop" % "hadoop-common" % "2.7.0" exclude ("org.apache.hadoop","hadoop-yarn-server-web-proxy"),
     "org.apache.spark" % "spark-sql_2.11" % "1.6.0" exclude ("org.apache.hadoop","hadoop-yarn-server-web-proxy"),
     "org.apache.spark" % "spark-hive_2.11" % "1.6.0" exclude ("org.apache.hadoop","hadoop-yarn-server-web-proxy"),
     "org.apache.spark" % "spark-yarn_2.11" % "1.6.0" exclude ("org.apache.hadoop","hadoop-yarn-server-web-proxy")
-)
 
+ */
 
 /*
 "org.apache.hadoop" % "hadoop-common" % "2.7.0" exclude ("org.apache.hadoop","hadoop-yarn-server-web-proxy"),
